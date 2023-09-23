@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  font-size: 25px;
+}
+body {
+  background-color: #c5e4f3;
+  font-family: "Times New Roman", Times, serif;
+}
+.container {
+  width: 100%;
+  height: 70px;
+  background-color: #bbd0ff;
+}
+.search {
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
+  background: #8ecae6;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  color: white;
+  box-shadow: 0.7rem 2rem 5rem #8ecae6;
+}
+input {
+  margin: 0 0.5rem 0 0.5rem;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: #8ecae6;
+  color: white;
+}
+::placeholder {
+  color: rgb(1, 12, 14);
+}
+.one {
+  float: left;
+  margin: 20px;
+  font-size: 20px;
+  text-decoration: none;
+  font-style: oblique;
+}
+.container ul {
+  display: block;
+}
+.container ul li {
+  list-style: none;
+}
+.container ul li a {
+  float: right;
+  margin: 20px;
+  font-size: 20px;
+  text-decoration: none;
+}
+.poster {
+  width: 100%;
+  height: 500px;
+}
+.poster img {
+  margin: 10px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.op {
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+  float: left;
+  transition: 0.5s;
+  background-color: #48cae4;
+  box-shadow: 10px 20px 10px gainsboro;
+  border-radius: 20px;
+}
+.op i {
+  margin-left: 10px;
+  margin-top: -20px;
+  transition: 0.2s;
+}
+.op i:hover {
+  transform: translateY(-50px);
+}
+.op p {
+  font-size: 20px;
+}
+.op:hover {
+  transform: scale(1.1);
+  z-index: 1;
+}

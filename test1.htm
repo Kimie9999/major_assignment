@@ -1,0 +1,399 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+            margin: 0;
+        }
+        .container{
+            width: 100%;
+            height: 100px;
+            background-color:#bbd0ff;
+            
+        }
+        *{
+
+font-size: 30px;
+}
+.input-wrapper{
+display: flex;
+align-items: center;
+justify-content: space-between;
+width: 1000px;
+background:#8ecae6;
+padding: 0.5rem;
+border-radius: 0.5rem;
+color:white;
+box-shadow: 0.7rem 2rem 5rem #8ecae6;
+margin-left: 500px;
+
+}
+input{
+
+margin: 0 0.5rem 0 0.5rem;
+width: 100%;
+border:none;
+outline: none;
+background:#8ecae6;
+}
+::placeholder{
+color:aliceblue;
+}
+        .container ul{
+            display: block;
+        }
+        .container ul li{
+            list-style: none;
+            
+        }
+        .container ul li a{
+            float:right;
+            margin: 20px;
+   margin-top: -20px;
+            font-size: 30px;
+            text-decoration: none;
+        }
+        .container2{
+            width: 100%;
+            height: 600px;
+        }
+        .container3{
+            width: 100%;
+            height: 900px;
+            background-color: #bbd0ff;
+
+        }
+        .box1{
+            width: 100%;
+            height: 250px;
+            background-color: aqua;
+           
+        }
+        .card1{
+            width: 400px;
+            height: 200px;
+            background-color: aquamarine;
+            float: left;
+            margin: 20px;
+            overflow: hidden;
+        }
+        .op{
+            width: 300px;
+            height: 300px;
+            background-color: white;
+            margin: 20px;
+            float: left;
+            transition: 0.5s;   
+            background-color:#48cae4;
+            box-shadow: 10px 20px 10px gainsboro;
+            border-radius: 20px;
+            
+        }
+       .op i{
+        margin-left: 130px;
+        margin-top: -20px;
+        transition: 0.5s;
+       }
+       .op i:hover{
+        transform: translateY(-50px);
+       
+       }
+       .op p{
+        font-size: 20px;
+       }
+       .op:hover{
+       transform: scale(1.3);
+       z-index: 2;
+       }
+       .pic{
+        width: 400px;
+        height: 400px;
+       }
+       .but{
+        width: 140px;
+        border-radius: 20px;
+        background-color:#3a86ff;
+        height: 50px;
+        font-size: 20px;
+        color: white;
+        border: none;
+        margin-top: -70px;
+        margin-left: 72px;
+        transition: 0.5s;
+        cursor: pointer;
+       }
+       .but:hover{
+  color: #3a86ff;
+  background-color: white;
+       }
+      
+      .boxx{
+        height: 100%;
+        width: 100%;
+        position: relative;
+      transition: transform 1500ms;
+      transform-style:preserve-3d ;
+
+      }
+      
+
+     
+      .front,
+      .back{
+        height: 100%;
+        width: 100%;
+        border-radius: 2rem;
+        box-shadow: 0 0 5px 2px rgb(50,50,50) ;
+        position: absolute;
+        backface-visibility: hidden;
+}
+      .front{
+        background-image: url(  );
+        
+      }
+      .back{
+        background-color: burlywood;
+        transform: rotateY(180deg);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:5rem;
+      }
+      .list{
+        width: 350px;
+        height: 400px;
+        margin: 50px;
+        float: right    ;
+        border-radius: 20px;
+        box-shadow: 10px 9px 20px grey;
+   
+      }
+    
+      
+      .list img{
+       width: 240px;
+       margin-left: 60px;
+       transition: 0.5s;
+        
+      }
+      .list img:hover{
+        transform: scale(1.2);
+        z-index: 1;
+      }
+      .list button{
+        width: 200px;
+
+        height: 50px;
+        background-color:aqua;
+        color: white;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: 0.5s;
+        font-size: 20px;
+        margin-left: 70px;
+        margin-top: -100px;
+
+      }
+      .list button:hover{
+        background-color: white;
+        color: #3a86ff;
+        width: 250px;
+        box-shadow: 0px 0px 10px lightgreen;
+       
+
+      }
+    
+    </style>
+</head>
+<body>
+     <div class="container">
+    <h1>BOOKSTORE</h1>
+    <ul>
+     <li><a href="#">HOME</a></li>
+       <select>
+        <option >   </option>
+       </select>
+        <li><a href="#">READ</a></li>
+        <li><a href="#">CONTACT</a></li>
+           
+    </ul>
+     </div> 
+     <br>
+    
+
+     <div class="input-wrapper">
+        <div class="fa fa-search"></div>
+        <input type="text" placeholder="SEARCH">
+        <div class="fa fa-times"></div>
+    </div>
+        <br>
+        <div class="container2">
+            <br>
+<div class="op">
+   <center> <h1>TYPE OF BOOK</h1></center>
+   <center><p></p>
+   </center> 
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="flip-card-front">
+    <i class="fa fa-book"></i>
+    </div>
+    
+</div>
+<div class="op">
+    <center> <h1>BOOK FOR BACII</h1></center>
+ <center>  <p>The books are for those students who want to make the ablity to be stronger before upcoming exam  </p> </center>
+    <br>
+    <br>
+    <br>
+    <br>
+    <i class="fa fa-book"></i>
+</div>
+<div class="op">
+    <center> <h1>CONATACT</h1></center>
+   <center><p>contact to the manager </p><br>
+   </center> 
+   <center>
+   <i style="margin: 5px;" class="fa fa-facebook"><a href=""></a></i>
+   
+   <i style="margin: 5px;" class="fa fa-twitter"></i>
+   <i style="margin: 5px ;" class="fa fa-instagram"></i>
+   <i style="margin: 5px;" class="fa fa-phone"></i>
+</center>
+    <br>
+    <br>
+    <br>
+    <br>
+  <button class="but" >Learn more</button>
+</div>
+<div class="op">
+    <center> <h1>TYPE OF BOOK</h1></center>
+    <center><p></p>
+    </center> 
+    <br>
+    <br>
+    <br>
+    <br>
+    <i class="fa fa-book"></i>
+</div>
+<div class="op">
+    <center> <h1>TYPE OF BOOK</h1></center>
+    <center><p></p>
+    </center> 
+    <br>
+    <br>
+    <br>
+    <br>
+    <i class="fa fa-book"></i>
+</div>
+        </div>
+</div>
+<center><h1 style="color:#5e60ce;" >LIST OF PRODUCT</h1></center>
+<hr style="width: 100%; background-color:gray ;" >
+<div class="list">
+    <div class="yu">
+<img src="watch1.png">
+<center><p>Smart watch</p></center>
+<br>
+<br>
+<br>
+<br>
+<button>ADD TO CARD</button>
+    </div>
+    
+</div>
+<div class="list">
+    <div class="yu">
+<img src="watch1.png">
+<center><p>10$</p></center>
+<br>
+<br>
+<br>
+<br>
+<button>ADD TO CARD</button>
+    </div>
+    
+</div>
+<div class="list">
+    <div class="yu">
+<img src="watch1.png">
+<center><p>20$</p></center>
+<br>
+<br>
+<br>
+<br>
+<button>ADD TO CARD</button>
+    </div>
+    
+</div>
+<div class="list">
+    <div class="yu">
+<img src="watch1.png">
+<center><p>14$</p></center>
+<br>
+<br>
+<br>
+<br>
+<button>ADD TO CARD</button>
+    </div>
+    <div style="margin-right:-8px ;" class="list">
+        <div class="yu">
+    <img src="watch6.png">
+    <center><p>Smart watch</p></center>
+    <br>
+    <br>
+    <br>
+    <br>
+    <button>ADD TO CARD</button>
+        </div>
+
+</div>
+    
+</div>
+<div class="list">
+    <div class="yu">
+<img src="watch5.png">
+<center><p>Smart watch</p></center>
+<br>
+<br>
+<br>
+<br>
+<button>ADD TO CARD</button>
+    </div>
+    
+</div>
+<div class="list">
+    <div class="yu">
+<img src="watch4.png">
+<center><p>Smart watch</p></center>
+<br>
+<br>
+<br>
+<br>
+<button>ADD TO CARD</button>
+    </div>
+    
+</div>
+<div class="list">
+    <div class="yu">
+<img src="watch3.png">
+<center><p>Smart watch</p></center>
+<br>
+<br>
+<br>
+<br>
+<button>ADD TO CARD</button>
+    </div>
+    
+</div>
+        
+</body>
+</html>

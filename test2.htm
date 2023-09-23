@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Major assignment</title>
+    <link rel="stylesheet" href="S2.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="one"><b>LMK Korean Skincare</b></h1>
+      <ul>
+        <li><a href="#">SHOP</a></li>
+        <li><a href="#">CONTACT</a></li>
+        <li><a href="#">HOME</a></li>
+      </ul>
+    </div>
+    <br />
+    <center>
+      <div class="search">
+        <div class="fa fa-search"></div>
+        <input type="text" placeholder="SEARCH" />
+        <div class="fa fa-times"></div>
+      </div>
+    </center>
+    <br />
+    <div class="poster">
+      <img src="images/k.jpg" alt="promotion" />
+      <img src="images/korean 3.jpg" alt="">
+      <img src="images/korean 7.webp" alt="">
+      <img src="images/korean 2.jpg" alt="">
+      <img src="images/kkk.jpg" alt="">
+    </div>
+    
+    <script>
+      // Get all the images within the poster container
+      const posterImages = document.querySelectorAll('.poster img');
+    
+      let currentImageIndex = 0;
+      const slideInterval = 3000; // Set the interval between slide transitions in milliseconds
+    
+      // Function to change the active image
+      function changeImage() {
+        // Hide all images
+        posterImages.forEach(image => {
+          image.style.display = 'none';
+        });
+    
+        // Show the current image
+        posterImages[currentImageIndex].style.display = 'block';
+    
+        // Increment the image index for the next slide
+        currentImageIndex = (currentImageIndex + 1) % posterImages.length;
+      }
+    
+      // Call the changeImage function initially
+      changeImage();
+    
+      // Set the interval to automatically change the image
+      setInterval(changeImage, slideInterval);
+    </script>
+    <br />
+    <center><h1>PRODUCT TYPE</h1></center>
+    <hr style="width: 100%; background-color:rgb(248, 242, 242) ;" >
+    <br>
+    <div class="op">
+      <center> <h1>TYPE OF BOOK</h1></center>
+      <center>
+      </center> 
+       <br>
+       <br>
+       <br>
+       <br>
+       <div class="flip-card-front">
+       <i class="fa fa-book"></i>
+       </div>
+  </body>
+</html>
